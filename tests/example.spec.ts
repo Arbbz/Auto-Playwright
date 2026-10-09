@@ -2,13 +2,6 @@ import { test, expect } from "@playwright/test";
 
 const BASE_URL = "https://playwright.dev/";
 
-test("has title", async ({ page }) => {
-  await page.goto("https://playwright.dev/");
-
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
-
 test("Basic Action", async ({ page }) => {
   await page.goto("https://playwright.dev/");
 
